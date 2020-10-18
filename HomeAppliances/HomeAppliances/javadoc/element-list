@@ -1,0 +1,9 @@
+com.company
+com.company.controller
+com.company.model
+com.company.model.homeelectricalappliances
+com.company.model.homeelectricalappliances.builder
+com.company.model.homeelectricalappliances.light
+com.company.model.homeelectricalappliances.parameters
+com.company.model.homeelectricalappliances.states
+com.company.view

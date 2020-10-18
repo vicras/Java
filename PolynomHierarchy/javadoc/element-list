@@ -1,0 +1,8 @@
+com.company
+com.company.controller
+com.company.model
+com.company.model.countable
+com.company.model.countable.factory
+com.company.model.polynomial
+com.company.model.polynomial.factory
+com.company.view
