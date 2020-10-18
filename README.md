@@ -2,11 +2,11 @@
 All projects in this repository are written in java
 
 # Project list:
-- [DES Cryptosystem](#DES_Cryptosystem_29)
-- [Home Electrical Appliances](#)
-- [Polynom Hierarchy](#)
-- [Text Parser](#)
-- [Tic Tac Toe game](#)
+- [DES Cryptosystem](#des-cryptosystem)
+- [Tic Tac Toe game](#tic-tac-toe-game)
+- [Text Parser](#text-parser)
+- [Home Electrical Appliances](#home-electrical-appliances)
+- [Polynom Hierarchy](#polynom-hierarchy)
 ---
 # DES Cryptosystem
 *Cryptosystem DES*, implemented in Java.
@@ -23,7 +23,7 @@ To test the system, use [NIST Tests](https://csrc.nist.gov/Projects/Random-Bit-G
 - SERIAL TEST
  
 The project requires a [commons-math](https://commons.apache.org/proper/commons-math/download_math.cgi) package
-report [link...]()
+report [link...](https://github.com/vicras/Java/blob/master/DesCryptosystem/%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20DES.docx)
 
 ---
 
@@ -31,7 +31,7 @@ report [link...]()
  Noughts and crosses is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. It is a solved game with a forced draw assuming best play from both players.
  Java FX application such provides opportunitues to play two persons and compete with other players with using leaderboards
  
-![](https://s3.tproger.ru/uploads/2019/11/github-profile-880x308.jpg "Demo view")
+![](https://github.com/vicras/Java/blob/master/TicTacToeGame/TicTacToe.png "Demo view")
 
 ### Todos
  - Write Multiplayer mode
@@ -60,7 +60,7 @@ Provides actions with list of various Home Appliances such as:
 - as Command line application 
 - as Java FX GUI application 
 
-![](https://s3.tproger.ru/uploads/2019/11/github-profile-880x308.jpg "Demo view")
+![](https://github.com/vicras/Java/blob/master/HomeAppliances/HomeAppliances.png "Demo view")
 
 *FX application* use command line application API as Model 
 
