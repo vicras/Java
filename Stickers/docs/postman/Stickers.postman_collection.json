@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "132757ab-388e-4354-a7e6-ee441b5deaee",
+		"name": "Stickers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"password\": \"Hello\",\n  \"login\": \"Hello\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{auth}}/login",
+							"host": [
+								"{{host}}{{auth}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign-in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"password\": \"Hello\",\n  \"login\": \"Hello\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{auth}}/sign-in",
+							"host": [
+								"{{host}}{{auth}}"
+							],
+							"path": [
+								"sign-in"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Note",
+			"item": [
+				{
+					"name": "Add new record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 20,\n  \"userId\": 20,\n  \"question\": \"Hello\",\n  \"answers\": [\n    \"Hello\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{gate}}/record",
+							"host": [
+								"{{host}}{{gate}}"
+							],
+							"path": [
+								"record"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get records by user ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{gate}}/records",
+							"host": [
+								"{{host}}{{gate}}"
+							],
+							"path": [
+								"records"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2xvZ2luIjoiYWRtaW4iLCJpc3MiOiIxMDAiLCJleHAiOjE2MzIzOTcxNjB9.FL7moumKcspu4dL2BRUtQ57RpOueM5PXXAl_txYvqOLGLbuKAz_D6gjNC4GWDPlrfvlKfhm2LE0N9qHG1_2uRg",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "token",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3351"
+		},
+		{
+			"key": "auth",
+			"value": "/auth"
+		},
+		{
+			"key": "gate",
+			"value": "/gate"
+		}
+	]
+}

@@ -1,0 +1,18 @@
+server:
+  port: 33533
+grpc:
+  server:
+    port: 3353
+  application:
+    name: note-grpc-server
+  user: ${GRPC_USER:user}
+  password: ${GRPC_PASSWORD:password}
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    clean-on-validation-error: false

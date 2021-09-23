@@ -1,0 +1,6 @@
+rootProject.name = 'Stickers'
+include 'gateway'
+include 'notes'
+include 'users'
+include 'lib'
+include 'grpc-lib'

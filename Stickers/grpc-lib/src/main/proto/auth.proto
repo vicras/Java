@@ -1,0 +1,35 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+option java_package = "com.vicras.proto_gen.auth";
+option java_multiple_files = true;
+
+message Credentials {
+  string password = 1;
+  string login = 2;
+}
+message Login {
+  string login = 1;
+}
+
+message Token {
+  string token = 1;
+}
+
+message Response {
+  string message = 1;
+}
+
+message User {
+  string login = 1;
+  string password = 2;
+  string id = 3;
+}
+
+service AuthController {
+  rpc getUserByLogin (Login) returns (User) {}
+  rpc getUserByToken(Token) returns (User) {}
+  rpc saveUser (Credentials) returns (google.protobuf.Empty) {}
+  rpc getToken (Credentials) returns (Token) {}
+  rpc isTokenValid (Token) returns (google.protobuf.BoolValue) {}
+}

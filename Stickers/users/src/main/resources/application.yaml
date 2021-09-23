@@ -1,0 +1,23 @@
+server:
+  port: 33521
+grpc:
+  server:
+    port: 3352
+  application:
+    name: user-grpc-server
+  user: ${GRPC_USER:user}
+  password: ${GRPC_PASSWORD:password}
+token:
+  secret: ${"secret":AUTH_SECRET}
+  expire:
+    minutes: 60
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    clean-on-validation-error: false
